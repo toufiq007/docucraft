@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-// import logo from "../public/logo.svg";
 
 const Logo = () => {
   return (
@@ -8,12 +7,11 @@ const Logo = () => {
       <div className="hidden lg:flex">
         <Link aria-label="Home" href="/">
           <Image
-            src="/logo.svg"
+            src="./logo.svg"
             alt="Protocol"
-            width={100}
-            height={24}
-            priority
             className="h-6 w-auto"
+            width={100}
+            height={100}
           />
         </Link>
       </div>
