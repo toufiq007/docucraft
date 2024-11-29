@@ -1,3 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
+
 const Landing = () => {
   return (
     <>
@@ -31,11 +34,11 @@ const Landing = () => {
         <h2>Getting started</h2>
         <p className="lead">
           To get started, create a new application in your
-          <a href="#">developer settings</a> , then read about how to make
+          <Link href="#">developer settings</Link> , then read about how to make
           requests for the resources you need to access using our HTTP APIs or
           dedicated client SDKs. When your integration is ready to go live,
-          publish it to our <a href="#">integrations directory</a> to reach the
-          Protocol community.
+          publish it to our <Link href="#">integrations directory</Link> to
+          reach the Protocol community.
         </p>
         <div className="my-16 xl:max-w-none">
           <div className="not-prose">
@@ -53,7 +56,7 @@ const Landing = () => {
             >
               <div className="absolute ml-[calc(-1*var(--width))] mt-1 hidden w-[var(--width)] opacity-0 transition [--width:calc(2.625rem+0.5px+50%-min(50%,calc(theme(maxWidth.lg)+theme(spacing.8))))] group-hover:opacity-100 group-focus:opacity-100 md:block lg:z-50 2xl:[--width:theme(spacing.10)]">
                 <div className="group/anchor block h-5 w-5 rounded-lg bg-zinc-50 ring-1 ring-inset ring-zinc-300 transition hover:ring-zinc-500 dark:bg-zinc-800 dark:ring-zinc-700 dark:hover:bg-zinc-700 dark:hover:ring-zinc-600">
-                  <img src="./assets/icons/rightArrow.svg" alt="" />
+                  <Image width={50} height={50} src="./rightArrow.svg" alt="" />
                 </div>
               </div>
               Guides
@@ -70,8 +73,11 @@ const Landing = () => {
               <p className="mt-4">
                 <a className="readMore" href="/authentication">
                   <span>Read more</span>
-                  <img
-                    src="./assets/icons/rightArrow.svg"
+                  <Image
+                    width={50}
+                    height={50}
+                    alt=""
+                    src="./rightArrow.svg"
                     className="relative top-px -mr-1 mt-0.5 h-5 w-5"
                   />
                 </a>
@@ -87,8 +93,11 @@ const Landing = () => {
               <p className="mt-4">
                 <a className="readMore" href="/authentication">
                   <span>Read more</span>
-                  <img
-                    src="./assets/icons/rightArrow.svg"
+                  <Image
+                    width={50}
+                    height={50}
+                    alt=""
+                    src="./rightArrow.svg"
                     className="relative top-px -mr-1 mt-0.5 h-5 w-5"
                   />
                 </a>
@@ -104,8 +113,11 @@ const Landing = () => {
               <p className="mt-4">
                 <a className="readMore" href="/authentication">
                   <span>Read more</span>
-                  <img
-                    src="./assets/icons/rightArrow.svg"
+                  <Image
+                    width={50}
+                    height={50}
+                    alt=""
+                    src="./rightArrow.svg"
                     className="relative top-px -mr-1 mt-0.5 h-5 w-5"
                   />
                 </a>
@@ -121,8 +133,11 @@ const Landing = () => {
               <p className="mt-4">
                 <a className="readMore" href="/authentication">
                   <span>Read more</span>
-                  <img
-                    src="./assets/icons/rightArrow.svg"
+                  <Image
+                    width={50}
+                    height={50}
+                    alt=""
+                    src="./rightArrow.svg"
                     className="relative top-px -mr-1 mt-0.5 h-5 w-5"
                   />
                 </a>
@@ -145,17 +160,19 @@ const Landing = () => {
             <div className="group relative flex rounded-2xl bg-zinc-50 transition-shadow hover:shadow-md hover:shadow-zinc-900/5 dark:bg-white/2.5 dark:hover:shadow-black/5">
               <div className="relative rounded-2xl px-4 pb-4 pt-16">
                 <div className="flex h-7 w-7 items-center justify-center rounded-full bg-zinc-900/5 ring-1 ring-zinc-900/25 backdrop-blur-[2px] transition duration-300 group-hover:bg-white/50 group-hover:ring-zinc-900/25 dark:bg-white/7.5 dark:ring-white/15 dark:group-hover:bg-emerald-300/10 dark:group-hover:ring-emerald-400">
-                  <img
-                    src="./assets/icons/contact.svg"
+                  <Image
+                    src="./contact.svg"
                     alt="Contacts"
+                    width={100}
+                    height={100}
                     className="h-5 w-5 fill-zinc-700/10 stroke-zinc-700 transition-colors duration-300 group-hover:stroke-zinc-900 dark:fill-white/10 dark:stroke-zinc-400 dark:group-hover:fill-emerald-300/10 dark:group-hover:stroke-emerald-400"
                   />
                 </div>
                 <h3 className="mt-4 text-sm font-semibold leading-7 text-zinc-900 dark:text-white">
-                  <a href="/contacts">
+                  <Link href="/contacts">
                     <span className="absolute inset-0 rounded-2xl"></span>
                     Contacts
-                  </a>
+                  </Link>
                 </h3>
                 <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
                   Learn about the contact model and how to create, retrieve,
